@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0042)http://wiki.apache.org/nutch/NutchTutorial -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="robots" content="index,nofollow">
+
+<title>NutchTutorial - Nutch Wiki</title>
+<script type="text/javascript" src="./NUTCH_TUTORIAL_1_files/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="./NUTCH_TUTORIAL_1_files/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="./NUTCH_TUTORIAL_1_files/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="./NUTCH_TUTORIAL_1_files/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="./NUTCH_TUTORIAL_1_files/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/wiki/modernized/css/msie.css">
+<![endif]-->
+
+
+<link rel="alternate" title="Nutch Wiki: NutchTutorial" href="http://wiki.apache.org/nutch/NutchTutorial?diffs=1&show_att=1&action=rss_rc&unique=0&page=NutchTutorial&ddiffs=1" type="application/rss+xml">
+
+
+<link rel="Start" href="http://wiki.apache.org/nutch/FrontPage">
+<link rel="Alternate" title="Wiki Markup" href="http://wiki.apache.org/nutch/NutchTutorial?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="http://wiki.apache.org/nutch/NutchTutorial?action=print">
+<link rel="Search" href="http://wiki.apache.org/nutch/FindPage">
+<link rel="Index" href="http://wiki.apache.org/nutch/TitleIndex">
+<link rel="Glossary" href="http://wiki.apache.org/nutch/WordIndex">
+<link rel="Help" href="http://wiki.apache.org/nutch/HelpOnFormatting">
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+<body lang="en" dir="ltr">
+
+<div id="header">
+
+<form id="searchform" method="get" action="./NUTCH_TUTORIAL_1_files/NUTCH_TUTORIAL_1.html">
+<div>
+<input type="hidden" name="action" value="fullsearch">
+<input type="hidden" name="context" value="180">
+<label for="searchinput" style="display: none;">Search:</label>
+<input id="searchinput" type="text" name="value" value="" size="20" onfocus="searchFocus(this)" onblur="searchBlur(this)" onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search" class="disabled">
+<input id="titlesearch" name="titlesearch" type="submit" value="Titles" alt="Search Titles" disabled="">
+<input id="fullsearch" name="fullsearch" type="submit" value="Text" alt="Search Full Text" disabled="">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<div id="logo"><a href="http://wiki.apache.org/nutch/FrontPage">Nutch Wiki</a></div>
+<div id="username"><a href="http://wiki.apache.org/nutch/NutchTutorial?action=login" id="login" rel="nofollow">Login</a></div>
+<h1 id="locationline">
+
+<span id="pagelocation"><a class="backlink" href="http://wiki.apache.org/nutch/NutchTutorial?action=fullsearch&value=linkto%3A%22NutchTutorial%22&context=180" rel="nofollow" title="Click to do a full-text search for this title">NutchTutorial</a></span>
+</h1>
+
+
+<ul id="navibar">
+<li class="wikilink"><a href="http://wiki.apache.org/nutch/FrontPage">FrontPage</a></li><li class="wikilink"><a href="http://wiki.apache.org/nutch/RecentChanges">RecentChanges</a></li><li class="wikilink"><a href="http://wiki.apache.org/nutch/FindPage">FindPage</a></li><li class="wikilink"><a href="http://wiki.apache.org/nutch/HelpContents">HelpContents</a></li><li class="current"><a href="./NUTCH_TUTORIAL_1_files/NUTCH_TUTORIAL_1.html">NutchTutorial</a></li>
+</ul>
+
+<div id="pageline"><hr style="display:none;"></div>
+
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="http://wiki.apache.org/nutch/NutchTutorial#" class="nbcomment" onclick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="http://wiki.apache.org/nutch/NutchTutorial?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="http://wiki.apache.org/nutch/NutchTutorial?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="./NUTCH_TUTORIAL_1_files/NUTCH_TUTORIAL_1.html">
+<div>
+    
+    <select name="action" onchange="if ((this.selectedIndex != 0) &amp;&amp;
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="show">More Actions:</option><option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="RenderAsDocbook">Render as Docbook</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="RenamePage" disabled="" class="disabled">Rename Page</option>
+<option value="CopyPage">Copy Page</option>
+<option value="DeletePage" disabled="" class="disabled">Delete Page</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="MyPages">My Pages</option>
+<option value="show" disabled="" class="disabled">Subscribe User</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="show" disabled="" class="disabled">Remove Spam</option>
+<option value="show" disabled="" class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="SyncPages">Sync Pages</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="Load">Load</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span><span class="anchor" id="line-4"></span><span class="anchor" id="line-5"></span><p class="line867">
+</p><h2 id="Introduction">Introduction</h2>
+<span class="anchor" id="line-6"></span><p class="line874">Apache Nutch is an open source Web crawler written in Java. By using it, we can find Web page hyperlinks in an automated manner, reduce lots of maintenance work, for example checking broken links, and create a copy of all the visited pages for searching over. That’s where Apache Solr comes in. Solr is an open source full text search framework, with Solr we can search the visited pages from Nutch. Luckily, integration between Nutch and Solr is pretty straightforward as explained below. <span class="anchor" id="line-7"></span><span class="anchor" id="line-8"></span></p><p class="line862">Apache Nutch supports Solr out-the-box, greatly simplifying Nutch-Solr integration. It also removes the legacy dependence upon both Apache Tomcat for running the old Nutch Web Application and upon Apache Lucene for indexing. Just download a binary release from <a class="http" href="http://www.apache.org/dyn/closer.cgi/nutch/">here</a>. <span class="anchor" id="line-9"></span><span class="anchor" id="line-10"></span></p><p class="line867">
+</p><h2 id="Table_of_Contents">Table of Contents</h2>
+<span class="anchor" id="line-11"></span><p class="line867"></p><div class="table-of-contents"><p class="table-of-contents-heading">Contents</p><ol><li>
+<a href="http://wiki.apache.org/nutch/NutchTutorial#Introduction">Introduction</a></li><li>
+<a href="http://wiki.apache.org/nutch/NutchTutorial#Table_of_Contents">Table of Contents</a></li><li>
+<a href="http://wiki.apache.org/nutch/NutchTutorial#Steps">Steps</a></li><li>
+<a href="http://wiki.apache.org/nutch/NutchTutorial#Requirements">Requirements</a></li><li>
+<a href="http://wiki.apache.org/nutch/NutchTutorial#A1._Install_Nutch">1. Install Nutch</a><ol><li>
+<a href="http://wiki.apache.org/nutch/NutchTutorial#Option_1:_Setup_Nutch_from_a_binary_distribution">Option 1: Setup Nutch from a binary distribution</a></li><li>
+<a href="http://wiki.apache.org/nutch/NutchTutorial#Option_2:_Set_up_Nutch_from_a_source_distribution">Option 2: Set up Nutch from a source distribution</a></li></ol></li><li>
+<a href="http://wiki.apache.org/nutch/NutchTutorial#A2._Verify_your_Nutch_installation">2. Verify your Nutch installation</a></li><li>
+<a href="http://wiki.apache.org/nutch/NutchTutorial#A3._Crawl_your_first_website">3. Crawl your first website</a><ol><li>
+<a href="http://wiki.apache.org/nutch/NutchTutorial#A3.1_Customize_your_crawl_properties">3.1 Customize your crawl properties</a></li><li>
+<a href="http://wiki.apache.org/nutch/NutchTutorial#A3.2_Create_a_URL_seed_list">3.2 Create a URL seed list</a></li><li>
+<a href="http://wiki.apache.org/nutch/NutchTutorial#A3.3_Using_the_Crawl_Command">3.3 Using the Crawl Command</a></li><li>
+<a href="http://wiki.apache.org/nutch/NutchTutorial#A3.4_Using_Individual_Commands_for_Whole-Web_Crawling">3.4 Using Individual Commands for Whole-Web Crawling</a></li><li>
+<a href="http://wiki.apache.org/nutch/NutchTutorial#A3.5._Using_the_crawl_script">3.5. Using the crawl script</a></li></ol></li><li>
+<a href="http://wiki.apache.org/nutch/NutchTutorial#A4._Setup_Solr_for_search">4. Setup Solr for search</a></li><li>
+<a href="http://wiki.apache.org/nutch/NutchTutorial#A5._Verify_Solr_installation">5. Verify Solr installation</a></li><li>
+<a href="http://wiki.apache.org/nutch/NutchTutorial#A6._Integrate_Solr_with_Nutch">6. Integrate Solr with Nutch</a></li></ol></div> <span class="anchor" id="line-12"></span><span class="anchor" id="line-13"></span><p class="line867">
+</p><h2 id="Steps">Steps</h2>
+<span class="anchor" id="line-14"></span><p class="line867"><span class="anchor" id="line-15"></span><span class="anchor" id="line-16"></span></p><div class="caution"><span class="anchor" id="line-1-1"></span><p class="line862">This tutorial describes the installation and use of Nutch 1.x (current release is 1.9). How to compile and set up Nutch 2.x with HBase, see <a href="http://wiki.apache.org/nutch/Nutch2Tutorial">Nutch2Tutorial</a>. </p></div><span class="anchor" id="line-17"></span><p class="line867">
+</p><h2 id="Requirements">Requirements</h2>
+<span class="anchor" id="line-18"></span><ul><li><p class="line862">Unix environment, or Windows-<a class="https" href="https://www.cygwin.com/">Cygwin</a> environment <span class="anchor" id="line-19"></span></p></li><li>Java Runtime/Development Environment (1.7) <span class="anchor" id="line-20"></span></li><li><p class="line862">(Source build only) Apache Ant: <a class="http" href="http://ant.apache.org/">http://ant.apache.org/</a> <span class="anchor" id="line-21"></span><span class="anchor" id="line-22"></span></p></li></ul><p class="line867">
+</p><h2 id="A1._Install_Nutch">1. Install Nutch</h2>
+<span class="anchor" id="line-23"></span><p class="line867">
+</p><h3 id="Option_1:_Setup_Nutch_from_a_binary_distribution">Option 1: Setup Nutch from a binary distribution</h3>
+<span class="anchor" id="line-24"></span><ul><li><p class="line862">Download a binary package (<tt class="backtick">apache-nutch-1.X-bin.zip</tt>) from <a class="http" href="http://www.apache.org/dyn/closer.cgi/nutch/">here</a>. <span class="anchor" id="line-25"></span></p></li><li><p class="line862">Unzip your binary Nutch package. There should be a folder <tt class="backtick">apache-nutch-1.X</tt>. <span class="anchor" id="line-26"></span></p></li><li><p class="line891"><tt class="backtick">cd&nbsp;apache-nutch-1.X/</tt> <span class="anchor" id="line-27"></span><span class="anchor" id="line-28"></span></p></li></ul><p class="line862">From now on, we are going to use <tt class="backtick">${NUTCH_RUNTIME_HOME}</tt> to refer to the current directory (<tt class="backtick">apache-nutch-1.X/</tt>). <span class="anchor" id="line-29"></span><span class="anchor" id="line-30"></span></p><p class="line867">
+</p><h3 id="Option_2:_Set_up_Nutch_from_a_source_distribution">Option 2: Set up Nutch from a source distribution</h3>
+<span class="anchor" id="line-31"></span><p class="line874">Advanced users may also use the source distribution: <span class="anchor" id="line-32"></span><span class="anchor" id="line-33"></span></p><ul><li><p class="line862">Download a source package (<tt class="backtick">apache-nutch-1.X-src.zip</tt>) <span class="anchor" id="line-34"></span></p></li><li>Unzip <span class="anchor" id="line-35"></span></li><li><p class="line891"><tt class="backtick">cd&nbsp;apache-nutch-1.X/</tt> <span class="anchor" id="line-36"></span></p></li><li><p class="line862">Run <tt class="backtick">ant</tt> in this folder (cf. <a href="http://wiki.apache.org/nutch/RunNutchInEclipse">RunNutchInEclipse</a>) <span class="anchor" id="line-37"></span></p></li><li><p class="line862">Now there is a directory <tt class="backtick">runtime/local</tt> which contains a ready to use Nutch installation. <span class="anchor" id="line-38"></span><span class="anchor" id="line-39"></span></p></li></ul><p class="line862">When the source distribution is used <tt class="backtick">${NUTCH_RUNTIME_HOME}</tt> refers to <tt class="backtick">apache-nutch-1.X/runtime/local/</tt>. Note that <span class="anchor" id="line-40"></span><span class="anchor" id="line-41"></span></p><ul><li><p class="line862">config files should be modified in <tt class="backtick">apache-nutch-1.X/runtime/local/conf/</tt> <span class="anchor" id="line-42"></span></p></li><li><p class="line891"><tt class="backtick">ant&nbsp;clean</tt> will remove this directory (keep copies of modified config files) <span class="anchor" id="line-43"></span><span class="anchor" id="line-44"></span></p></li></ul><p class="line867">
+</p><h2 id="A2._Verify_your_Nutch_installation">2. Verify your Nutch installation</h2>
+<span class="anchor" id="line-45"></span><ul><li><p class="line862">run "<tt class="backtick">bin/nutch</tt>" - You can confirm a correct installation if you see something similar to the following: <span class="anchor" id="line-46"></span><span class="anchor" id="line-47"></span></p></li></ul><p class="line867"><span class="anchor" id="line-48"></span><span class="anchor" id="line-49"></span><span class="anchor" id="line-50"></span><span class="anchor" id="line-51"></span><span class="anchor" id="line-52"></span><span class="anchor" id="line-53"></span><span class="anchor" id="line-54"></span><span class="anchor" id="line-55"></span><span class="anchor" id="line-56"></span><span class="anchor" id="line-57"></span><span class="anchor" id="line-58"></span></p><pre><span class="anchor" id="line-1"></span>Usage: nutch COMMAND where command is one of:
+<span class="anchor" id="line-2"></span>crawl             one-step crawler for intranets (DEPRECATED)
+<span class="anchor" id="line-3"></span>readdb            read / dump crawl db
+<span class="anchor" id="line-4"></span>mergedb           merge crawldb-s, with optional filtering
+<span class="anchor" id="line-5"></span>readlinkdb        read / dump link db
+<span class="anchor" id="line-6"></span>inject            inject new urls into the database
+<span class="anchor" id="line-7"></span>generate          generate new segments to fetch from crawl db
+<span class="anchor" id="line-8"></span>freegen           generate new segments to fetch from text files
+<span class="anchor" id="line-9"></span>fetch             fetch a segment's pages
+<span class="anchor" id="line-10"></span>...</pre><span class="anchor" id="line-59"></span><p class="line874">Some troubleshooting tips: <span class="anchor" id="line-60"></span><span class="anchor" id="line-61"></span></p><ul><li>Run the following command if you are seeing "Permission denied": <span class="anchor" id="line-62"></span><span class="anchor" id="line-63"></span></li></ul><p class="line867"><span class="anchor" id="line-64"></span><span class="anchor" id="line-65"></span></p><pre><span class="anchor" id="line-1-1"></span>chmod +x bin/nutch</pre><span class="anchor" id="line-66"></span><ul><li><p class="line862">Setup <tt class="backtick">JAVA_HOME</tt> if you are seeing <tt class="backtick">JAVA_HOME</tt> not set. On Mac, you can run the following command or add it to <tt class="backtick">~/.bashrc</tt>: <span class="anchor" id="line-67"></span><span class="anchor" id="line-68"></span></p></li></ul><p class="line867"><span class="anchor" id="line-69"></span><span class="anchor" id="line-70"></span></p><pre><span class="anchor" id="line-1-2"></span>export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home</pre><span class="anchor" id="line-71"></span><p class="line874">On Debian or Ubuntu, you can run the following command or add it to ~/.bashrc: <span class="anchor" id="line-72"></span><span class="anchor" id="line-73"></span></p><p class="line867"><span class="anchor" id="line-74"></span><span class="anchor" id="line-75"></span></p><pre><span class="anchor" id="line-1-3"></span>export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")</pre><span class="anchor" id="line-76"></span><p class="line867">
+</p><h2 id="A3._Crawl_your_first_website">3. Crawl your first website</h2>
+<span class="anchor" id="line-77"></span><p class="line874">Nutch requires two configuration changes before a website can be crawled: <span class="anchor" id="line-78"></span><span class="anchor" id="line-79"></span></p><ol type="1"><li>Customize your crawl properties, where at a minimum, you provide a name for your crawler for external servers to recognize <span class="anchor" id="line-80"></span></li><li>Set a seed list of URLs to crawl <span class="anchor" id="line-81"></span><span class="anchor" id="line-82"></span></li></ol><p class="line867">
+</p><h3 id="A3.1_Customize_your_crawl_properties">3.1 Customize your crawl properties</h3>
+<span class="anchor" id="line-83"></span><ul><li><p class="line862">Default crawl properties can be viewed and edited within <tt class="backtick">conf/nutch-default.xml&nbsp;</tt>- where most of these can be used without modification <span class="anchor" id="line-84"></span></p></li><li><p class="line862">The file <tt class="backtick">conf/nutch-site.xml</tt> serves as a place to add your own custom crawl properties that overwrite <tt class="backtick">conf/nutch-default.xml</tt>. The only required modification for this file is to override the <tt class="backtick">value</tt> field of the <tt class="backtick">http.agent.name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt> <span class="anchor" id="line-85"></span></p><ul><li style="list-style-type:none"><p class="line862">i.e. Add your agent name in the <tt class="backtick">value</tt> field of the <tt class="backtick">http.agent.name</tt> property in <tt class="backtick">conf/nutch-site.xml</tt>, for example: <span class="anchor" id="line-86"></span><span class="anchor" id="line-87"></span></p></li></ul></li></ul><p class="line867"><span class="anchor" id="line-88"></span><span class="anchor" id="line-89"></span><span class="anchor" id="line-90"></span><span class="anchor" id="line-91"></span><span class="anchor" id="line-92"></span></p><pre><span class="anchor" id="line-1-4"></span>&lt;property&gt;
+<span class="anchor" id="line-2-1"></span> &lt;name&gt;http.agent.name&lt;/name&gt;
+<span class="anchor" id="line-3-1"></span> &lt;value&gt;My Nutch Spider&lt;/value&gt;
+<span class="anchor" id="line-4-1"></span>&lt;/property&gt;</pre><span class="anchor" id="line-93"></span><p class="line867">
+</p><h3 id="A3.2_Create_a_URL_seed_list">3.2 Create a URL seed list</h3>
+<span class="anchor" id="line-94"></span><ul><li>A URL seed list includes a list of websites, one-per-line, which nutch will look to crawl <span class="anchor" id="line-95"></span></li><li><p class="line862">The file <tt class="backtick">conf/regex-urlfilter.txt</tt> will provide Regular Expressions that allow nutch to filter and narrow the types of web resources to crawl and download <span class="anchor" id="line-96"></span><span class="anchor" id="line-97"></span></p></li></ul><p class="line867">
+</p><h4 id="Create_a_URL_seed_list">Create a URL seed list</h4>
+<span class="anchor" id="line-98"></span><ul><li><p class="line891"><tt class="backtick">mkdir&nbsp;-p&nbsp;urls</tt> <span class="anchor" id="line-99"></span></p></li><li><p class="line891"><tt class="backtick">cd&nbsp;urls</tt> <span class="anchor" id="line-100"></span></p></li><li><p class="line891"><tt class="backtick">touch&nbsp;seed.txt</tt> to create a text file <tt class="backtick">seed.txt</tt> under <tt class="backtick">urls/</tt> with the following content (one URL per line for each site you want Nutch to crawl). <span class="anchor" id="line-101"></span><span class="anchor" id="line-102"></span></p></li></ul><p class="line867"><span class="anchor" id="line-103"></span><span class="anchor" id="line-104"></span></p><pre><span class="anchor" id="line-1-5"></span>http://nutch.apache.org/</pre><span class="anchor" id="line-105"></span><p class="line867">
+</p><h4 id="A.28Optional.29_Configure_Regular_Expression_Filters">(Optional) Configure Regular Expression Filters</h4>
+<span class="anchor" id="line-106"></span><p class="line862">Edit the file <tt class="backtick">conf/regex-urlfilter.txt</tt> and replace <span class="anchor" id="line-107"></span><span class="anchor" id="line-108"></span></p><p class="line867"><span class="anchor" id="line-109"></span><span class="anchor" id="line-110"></span><span class="anchor" id="line-111"></span></p><pre><span class="anchor" id="line-1-6"></span># accept anything else
+<span class="anchor" id="line-2-2"></span>+.</pre><span class="anchor" id="line-112"></span><p class="line862">with a regular expression matching the domain you wish to crawl. For example, if you wished to limit the crawl to the <tt class="backtick">nutch.apache.org</tt> domain, the line should read: <span class="anchor" id="line-113"></span><span class="anchor" id="line-114"></span></p><p class="line867"><span class="anchor" id="line-115"></span><span class="anchor" id="line-116"></span></p><pre><span class="anchor" id="line-1-7"></span> +^http://([a-z0-9]*\.)*nutch.apache.org/</pre><span class="anchor" id="line-117"></span><p class="line862">This will include any URL in the domain <tt class="backtick">nutch.apache.org</tt>. <span class="anchor" id="line-118"></span><span class="anchor" id="line-119"></span></p><p class="line874">NOTE: Not specifying any domains to include within regex-urlfilter.txt will lead to all domains linking to your seed URLs file being crawled as well. <span class="anchor" id="line-120"></span><span class="anchor" id="line-121"></span></p><p class="line867">
+</p><h3 id="A3.3_Using_the_Crawl_Command">3.3 Using the Crawl Command</h3>
+<span class="anchor" id="line-122"></span><p class="line867"><span class="anchor" id="line-123"></span><span class="anchor" id="line-124"></span></p><div class="caution"><span class="anchor" id="line-1-2"></span><p class="line862">The crawl command is deprecated. Please see section <a href="http://wiki.apache.org/nutch/NutchTutorial#a3.5._Using_the_crawl_script">3.5</a> on how to use the crawl script that is intended to replace the crawl command. </p></div><span class="anchor" id="line-125"></span><p class="line874">Now we are ready to initiate a crawl, use the following parameters: <span class="anchor" id="line-126"></span><span class="anchor" id="line-127"></span></p><ul><li><p class="line891"><strong>-dir</strong> <em>dir</em> names the directory to put the crawl in. <span class="anchor" id="line-128"></span></p></li><li><p class="line891"><strong>-threads</strong> <em>threads</em> determines the number of threads that will fetch in parallel. <span class="anchor" id="line-129"></span></p></li><li><p class="line891"><strong>-depth</strong> <em>depth</em> indicates the link depth from the root page that should be crawled. <span class="anchor" id="line-130"></span></p></li><li><p class="line891"><strong>-topN</strong> <em>N</em> determines the maximum number of pages that will be retrieved at each level up to the depth. <span class="anchor" id="line-131"></span></p></li><li>Run the following command: <span class="anchor" id="line-132"></span><span class="anchor" id="line-133"></span></li></ul><p class="line867"><span class="anchor" id="line-134"></span><span class="anchor" id="line-135"></span></p><pre><span class="anchor" id="line-1-8"></span>bin/nutch crawl urls -dir crawl -depth 3 -topN 5</pre><span class="anchor" id="line-136"></span><ul><li>Now you should be able to see the following directories created: <span class="anchor" id="line-137"></span><span class="anchor" id="line-138"></span></li></ul><p class="line867"><span class="anchor" id="line-139"></span><span class="anchor" id="line-140"></span><span class="anchor" id="line-141"></span><span class="anchor" id="line-142"></span></p><pre><span class="anchor" id="line-1-9"></span>crawl/crawldb
+<span class="anchor" id="line-2-3"></span>crawl/linkdb
+<span class="anchor" id="line-3-2"></span>crawl/segments</pre><span class="anchor" id="line-143"></span><p class="line867"><strong>NOTE</strong>: If you have a Solr core already set up and wish to index to it, you are required to add the <tt class="backtick">-solr&nbsp;&lt;solrUrl&gt;&nbsp;parameter</tt> to your <tt class="backtick">crawl</tt> command e.g. <span class="anchor" id="line-144"></span><span class="anchor" id="line-145"></span></p><p class="line867"><span class="anchor" id="line-146"></span><span class="anchor" id="line-147"></span></p><pre><span class="anchor" id="line-1-10"></span>bin/nutch crawl urls -solr http://localhost:8983/solr/ -depth 3 -topN 5</pre><span class="anchor" id="line-148"></span><p class="line862">If not then please skip to <a href="http://wiki.apache.org/nutch/NutchTutorial#A4._Setup_Solr_for_search">here</a> for how to set up your Solr instance and index your crawl data. <span class="anchor" id="line-149"></span><span class="anchor" id="line-150"></span></p><p class="line862">Typically one starts testing one's configuration by crawling at shallow depths, sharply limiting the number of pages fetched at each level (<tt class="backtick">-topN</tt>), and watching the output to check that desired pages are fetched and undesirable pages are not. Once one is confident of the configuration, then an appropriate depth for a full crawl is around 10. The number of pages per level (<tt class="backtick">-topN</tt>) for a full crawl can be from tens of thousands to millions, depending on your resources. <span class="anchor" id="line-151"></span><span class="anchor" id="line-152"></span></p><p class="line867">
+</p><h3 id="A3.4_Using_Individual_Commands_for_Whole-Web_Crawling">3.4 Using Individual Commands for Whole-Web Crawling</h3>
+<span class="anchor" id="line-153"></span><p class="line867"><strong>NOTE</strong>: If you previously modified the file <tt class="backtick">conf/regex-urlfilter.txt</tt> as covered <a href="http://wiki.apache.org/nutch/NutchTutorial#A3._Crawl_your_first_website">here</a> you will need to change it back. <span class="anchor" id="line-154"></span><span class="anchor" id="line-155"></span></p><p class="line862">Whole-Web crawling is designed to handle very large crawls which may take weeks to complete, running on multiple machines.  This also permits more control over the crawl process, and incremental crawling.  It is important to note that whole Web crawling does not necessarily mean crawling the entire World Wide Web.  We can limit a whole Web crawl to just a list of the URLs we want to crawl.  This is done by using a filter just like the one we used when we did the <tt class="backtick">crawl</tt> command (above). <span class="anchor" id="line-156"></span><span class="anchor" id="line-157"></span></p><p class="line867">
+</p><h4 id="Step-by-Step:_Concepts">Step-by-Step: Concepts</h4>
+<span class="anchor" id="line-158"></span><p class="line874">Nutch data is composed of: <span class="anchor" id="line-159"></span><span class="anchor" id="line-160"></span></p><ol type="1"><li>The crawl database, or crawldb. This contains information about every URL known to Nutch, including whether it was fetched, and, if so, when. <span class="anchor" id="line-161"></span></li><li>The link database, or linkdb. This contains the list of known links to each URL, including both the source URL and anchor text of the link. <span class="anchor" id="line-162"></span></li><li>A set of segments. Each segment is a set of URLs that are fetched as a unit. Segments are directories with the following subdirectories: <span class="anchor" id="line-163"></span><ul><li><p class="line862">a <em>crawl_generate</em> names a set of URLs to be fetched <span class="anchor" id="line-164"></span></p></li><li><p class="line862">a <em>crawl_fetch</em> contains the status of fetching each URL <span class="anchor" id="line-165"></span></p></li><li><p class="line862">a <em>content</em> contains the raw content retrieved from each URL <span class="anchor" id="line-166"></span></p></li><li><p class="line862">a <em>parse_text</em> contains the parsed text of each URL <span class="anchor" id="line-167"></span></p></li><li><p class="line862">a <em>parse_data</em> contains outlinks and metadata parsed from each URL <span class="anchor" id="line-168"></span></p></li><li><p class="line862">a <em>crawl_parse</em> contains the outlink URLs, used to update the crawldb <span class="anchor" id="line-169"></span><span class="anchor" id="line-170"></span></p></li></ul></li></ol><p class="line867">
+</p><h4 id="Step-by-Step:_Seeding_the_crawldb_with_a_list_of_URLs">Step-by-Step: Seeding the crawldb with a list of URLs</h4>
+<span class="anchor" id="line-171"></span><p class="line867">
+</p><h5 id="Option_1:__Bootstrapping_from_the_DMOZ_database.">Option 1:  Bootstrapping from the DMOZ database.</h5>
+<span class="anchor" id="line-172"></span><p class="line874">The injector adds URLs to the crawldb. Let's inject URLs from the DMOZ Open Directory. First we must download and uncompress the file listing all of the DMOZ pages. (This is a 200+ MB file, so this will take a few minutes.) <span class="anchor" id="line-173"></span><span class="anchor" id="line-174"></span></p><p class="line867"><span class="anchor" id="line-175"></span><span class="anchor" id="line-176"></span><span class="anchor" id="line-177"></span></p><pre><span class="anchor" id="line-1-11"></span>wget http://rdf.dmoz.org/rdf/content.rdf.u8.gz
+<span class="anchor" id="line-2-4"></span>gunzip content.rdf.u8.gz</pre><span class="anchor" id="line-178"></span><p class="line874">Next we select a random subset of these pages. (We use a random subset so that everyone who runs this tutorial doesn't hammer the same sites.) DMOZ contains around three million URLs. We select one out of every 5,000, so that we end up with around 1,000 URLs: <span class="anchor" id="line-179"></span><span class="anchor" id="line-180"></span></p><p class="line867"><span class="anchor" id="line-181"></span><span class="anchor" id="line-182"></span><span class="anchor" id="line-183"></span></p><pre><span class="anchor" id="line-1-12"></span>mkdir dmoz
+<span class="anchor" id="line-2-5"></span>bin/nutch org.apache.nutch.tools.DmozParser content.rdf.u8 -subset 5000 &gt; dmoz/urls</pre><span class="anchor" id="line-184"></span><p class="line874">The parser also takes a few minutes, as it must parse the full file. Finally, we initialize the crawldb with the selected URLs. <span class="anchor" id="line-185"></span><span class="anchor" id="line-186"></span></p><p class="line867"><span class="anchor" id="line-187"></span><span class="anchor" id="line-188"></span></p><pre><span class="anchor" id="line-1-13"></span>bin/nutch inject crawl/crawldb dmoz</pre><span class="anchor" id="line-189"></span><p class="line874">Now we have a Web database with around 1,000 as-yet unfetched URLs in it. <span class="anchor" id="line-190"></span><span class="anchor" id="line-191"></span></p><p class="line867">
+</p><h5 id="Option_2.__Bootstrapping_from_an_initial_seed_list.">Option 2.  Bootstrapping from an initial seed list.</h5>
+<span class="anchor" id="line-192"></span><p class="line862">This option shadows the creation of the seed list as covered <a href="http://wiki.apache.org/nutch/NutchTutorial#A3._Crawl_your_first_website">here</a>. <span class="anchor" id="line-193"></span><span class="anchor" id="line-194"></span></p><p class="line867"><span class="anchor" id="line-195"></span><span class="anchor" id="line-196"></span></p><pre><span class="anchor" id="line-1-14"></span>bin/nutch inject crawl/crawldb urls</pre><span class="anchor" id="line-197"></span><p class="line867">
+</p><h4 id="Step-by-Step:_Fetching">Step-by-Step: Fetching</h4>
+<span class="anchor" id="line-198"></span><p class="line874">To fetch, we first generate a fetch list from the database: <span class="anchor" id="line-199"></span><span class="anchor" id="line-200"></span></p><p class="line867"><span class="anchor" id="line-201"></span><span class="anchor" id="line-202"></span></p><pre><span class="anchor" id="line-1-15"></span>bin/nutch generate crawl/crawldb crawl/segments</pre><span class="anchor" id="line-203"></span><p class="line862">This generates a fetch list for all of the pages due to be fetched. The fetch list is placed in a newly created segment directory. The segment directory is named by the time it's created. We save the name of this segment in the shell variable <tt>s1</tt>: <span class="anchor" id="line-204"></span><span class="anchor" id="line-205"></span></p><p class="line867"><span class="anchor" id="line-206"></span><span class="anchor" id="line-207"></span><span class="anchor" id="line-208"></span></p><pre><span class="anchor" id="line-1-16"></span>s1=`ls -d crawl/segments/2* | tail -1`
+<span class="anchor" id="line-2-6"></span>echo $s1</pre><span class="anchor" id="line-209"></span><p class="line874">Now we run the fetcher on this segment with: <span class="anchor" id="line-210"></span><span class="anchor" id="line-211"></span></p><p class="line867"><span class="anchor" id="line-212"></span><span class="anchor" id="line-213"></span></p><pre><span class="anchor" id="line-1-17"></span>bin/nutch fetch $s1</pre><span class="anchor" id="line-214"></span><p class="line874">Then we parse the entries: <span class="anchor" id="line-215"></span><span class="anchor" id="line-216"></span></p><p class="line867"><span class="anchor" id="line-217"></span><span class="anchor" id="line-218"></span></p><pre><span class="anchor" id="line-1-18"></span>bin/nutch parse $s1</pre><span class="anchor" id="line-219"></span><p class="line874">When this is complete, we update the database with the results of the fetch: <span class="anchor" id="line-220"></span><span class="anchor" id="line-221"></span></p><p class="line867"><span class="anchor" id="line-222"></span><span class="anchor" id="line-223"></span></p><pre><span class="anchor" id="line-1-19"></span>bin/nutch updatedb crawl/crawldb $s1</pre><span class="anchor" id="line-224"></span><p class="line874">Now the database contains both updated entries for all initial pages as well as new entries that correspond to newly discovered pages linked from the initial set. <span class="anchor" id="line-225"></span><span class="anchor" id="line-226"></span></p><p class="line874">Now we generate and fetch a new segment containing the top-scoring 1,000 pages: <span class="anchor" id="line-227"></span><span class="anchor" id="line-228"></span></p><p class="line867"><span class="anchor" id="line-229"></span><span class="anchor" id="line-230"></span><span class="anchor" id="line-231"></span><span class="anchor" id="line-232"></span><span class="anchor" id="line-233"></span><span class="anchor" id="line-234"></span><span class="anchor" id="line-235"></span><span class="anchor" id="line-236"></span></p><pre><span class="anchor" id="line-1-20"></span>bin/nutch generate crawl/crawldb crawl/segments -topN 1000
+<span class="anchor" id="line-2-7"></span>s2=`ls -d crawl/segments/2* | tail -1`
+<span class="anchor" id="line-3-3"></span>echo $s2
+<span class="anchor" id="line-4-2"></span>
+<span class="anchor" id="line-5-1"></span>bin/nutch fetch $s2
+<span class="anchor" id="line-6-1"></span>bin/nutch parse $s2
+<span class="anchor" id="line-7-1"></span>bin/nutch updatedb crawl/crawldb $s2</pre><span class="anchor" id="line-237"></span><p class="line874">Let's fetch one more round: <span class="anchor" id="line-238"></span><span class="anchor" id="line-239"></span></p><p class="line867"><span class="anchor" id="line-240"></span><span class="anchor" id="line-241"></span><span class="anchor" id="line-242"></span><span class="anchor" id="line-243"></span><span class="anchor" id="line-244"></span><span class="anchor" id="line-245"></span><span class="anchor" id="line-246"></span><span class="anchor" id="line-247"></span></p><pre><span class="anchor" id="line-1-21"></span>bin/nutch generate crawl/crawldb crawl/segments -topN 1000
+<span class="anchor" id="line-2-8"></span>s3=`ls -d crawl/segments/2* | tail -1`
+<span class="anchor" id="line-3-4"></span>echo $s3
+<span class="anchor" id="line-4-3"></span>
+<span class="anchor" id="line-5-2"></span>bin/nutch fetch $s3
+<span class="anchor" id="line-6-2"></span>bin/nutch parse $s3
+<span class="anchor" id="line-7-2"></span>bin/nutch updatedb crawl/crawldb $s3</pre><span class="anchor" id="line-248"></span><p class="line874">By this point we've fetched a few thousand pages. Let's invert links and index them! <span class="anchor" id="line-249"></span><span class="anchor" id="line-250"></span></p><p class="line867">
+</p><h4 id="Step-by-Step:_Invertlinks">Step-by-Step: Invertlinks</h4>
+<span class="anchor" id="line-251"></span><p class="line874">Before indexing we first invert all of the links, so that we may index incoming anchor text with the pages. <span class="anchor" id="line-252"></span><span class="anchor" id="line-253"></span></p><p class="line867"><span class="anchor" id="line-254"></span><span class="anchor" id="line-255"></span></p><pre><span class="anchor" id="line-1-22"></span>bin/nutch invertlinks crawl/linkdb -dir crawl/segments</pre><span class="anchor" id="line-256"></span><p class="line874">We are now ready to search with Apache Solr. <span class="anchor" id="line-257"></span><span class="anchor" id="line-258"></span></p><p class="line867">
+</p><h4 id="Step-by-Step:_Indexing_into_Apache_Solr">Step-by-Step: Indexing into Apache Solr</h4>
+<span class="anchor" id="line-259"></span><p class="line862">Note: For this step you should have Solr installation. If you didn't integrate Nutch with Solr. You should read <a href="http://wiki.apache.org/nutch/NutchTutorial#A4._Setup_Solr_for_search">here</a>. <span class="anchor" id="line-260"></span><span class="anchor" id="line-261"></span></p><p class="line862">Now we are ready to go on and index all the resources. For more information see <a class="http" href="http://wiki.apache.org/nutch/bin/nutch%20solrindex">this paper</a> <span class="anchor" id="line-262"></span><span class="anchor" id="line-263"></span></p><p class="line867"><span class="anchor" id="line-264"></span><span class="anchor" id="line-265"></span><span class="anchor" id="line-266"></span></p><pre><span class="anchor" id="line-1-23"></span>     Usage: bin/nutch solrindex &lt;solr url&gt; &lt;crawldb&gt; [-linkdb &lt;linkdb&gt;][-params k1=v1&amp;k2=v2...] (&lt;segment&gt; ...| -dir &lt;segments&gt;) [-noCommit] [-deleteGone] [-filter] [-normalize]
+<span class="anchor" id="line-2-9"></span>     Example: bin/nutch solrindex http://localhost:8983/solr crawl/crawldb/ -linkdb crawl/linkdb/ crawl/segments/20131108063838/ -filter -normalize</pre><span class="anchor" id="line-267"></span><p class="line867">
+</p><h4 id="Step-by-Step:_Deleting_Duplicates">Step-by-Step: Deleting Duplicates</h4>
+<span class="anchor" id="line-268"></span><p class="line874">Once indexed the entire contents, it must be disposed of duplicate urls in this way ensures that the urls are unique. <span class="anchor" id="line-269"></span><span class="anchor" id="line-270"></span></p><p class="line867"><a href="http://wiki.apache.org/nutch/MapReduce">MapReduce</a>: <span class="anchor" id="line-271"></span><span class="anchor" id="line-272"></span></p><ul><li><p class="line862">Map: Identity map where keys are digests and values are  <a class="http" href="http://wiki.apache.org/nutch/SolrRecord">SolrRecord</a> instances (which contain id, boost and timestamp) <span class="anchor" id="line-273"></span></p></li><li><p class="line862">Reduce: After map, <a class="http" href="http://wiki.apache.org/nutch/SolrRecord">SolrRecord</a>s with the same digest will be grouped together. Now, of these documents with the same digests, delete all of them except the one with the highest score (boost field). If two (or more) documents have the same score, then the document with the latest timestamp is kept. Again, every other is deleted from solr index. <span class="anchor" id="line-274"></span><span class="anchor" id="line-275"></span></p></li></ul><p class="line867"><span class="anchor" id="line-276"></span><span class="anchor" id="line-277"></span><span class="anchor" id="line-278"></span></p><pre><span class="anchor" id="line-1-24"></span>     Usage: bin/nutch solrdedup &lt;solr url&gt;
+<span class="anchor" id="line-2-10"></span>     Example: /bin/nutch solrdedup http://localhost:8983/solr</pre><span class="anchor" id="line-279"></span><p class="line867">
+</p><h4 id="Step-by-Step:_Cleaning_Solr">Step-by-Step: Cleaning Solr</h4>
+<span class="anchor" id="line-280"></span><p class="line874">The class scans a crawldb directory looking for entries with status DB_GONE (404) and sends delete requests to Solr for those documents. Once Solr receives the request the aforementioned documents are duly deleted. This maintains a healthier quality of Solr index. <span class="anchor" id="line-281"></span><span class="anchor" id="line-282"></span></p><p class="line867"><span class="anchor" id="line-283"></span><span class="anchor" id="line-284"></span><span class="anchor" id="line-285"></span></p><pre><span class="anchor" id="line-1-25"></span>     Usage: bin/nutch solrclean &lt;crawldb&gt; &lt;solrurl&gt;
+<span class="anchor" id="line-2-11"></span>     Example: /bin/nutch solrclean crawl/crawldb/ http://localhost:8983/solr</pre><span class="anchor" id="line-286"></span><p class="line867">
+</p><h3 id="A3.5._Using_the_crawl_script">3.5. Using the crawl script</h3>
+<span class="anchor" id="line-287"></span><p class="line874">If you have followed the 3.2 section above on how the crawling can be done step by step, you might be wondering how a bash script can be written to automate all the process described above. <span class="anchor" id="line-288"></span><span class="anchor" id="line-289"></span></p><p class="line862">Nutch developers have written one for you :), and it is available at <a href="http://wiki.apache.org/nutch/bin/crawl">bin/crawl</a>. <span class="anchor" id="line-290"></span><span class="anchor" id="line-291"></span></p><p class="line867"><span class="anchor" id="line-292"></span><span class="anchor" id="line-293"></span><span class="anchor" id="line-294"></span></p><pre><span class="anchor" id="line-1-26"></span>     Usage: bin/crawl &lt;seedDir&gt; &lt;crawlDir&gt; &lt;solrURL&gt; &lt;numberOfRounds&gt;
+<span class="anchor" id="line-2-12"></span>     Example: bin/crawl urls/ TestCrawl/ http://localhost:8983/solr/ 2</pre><span class="anchor" id="line-295"></span><p class="line874">The crawl script has lot of parameters set, and you can modify the parameters to your needs. It would be ideal to understand the parameters before setting up big crawls. <span class="anchor" id="line-296"></span><span class="anchor" id="line-297"></span></p><p class="line867">
+</p><h2 id="A4._Setup_Solr_for_search">4. Setup Solr for search</h2>
+<span class="anchor" id="line-298"></span><ul><li><p class="line862">download binary file from <a class="http" href="http://www.apache.org/dyn/closer.cgi/lucene/solr/">here</a> <span class="anchor" id="line-299"></span></p></li><li><p class="line862">unzip to <tt class="backtick">$HOME/apache-solr-3.X</tt>, we will now refer to this as <tt class="backtick">${APACHE_SOLR_HOME}</tt> <span class="anchor" id="line-300"></span></p></li><li><p class="line891"><tt class="backtick">cd&nbsp;${APACHE_SOLR_HOME}/example</tt> <span class="anchor" id="line-301"></span></p></li><li><p class="line891"><tt class="backtick">java&nbsp;-jar&nbsp;start.jar</tt> <span class="anchor" id="line-302"></span><span class="anchor" id="line-303"></span></p></li></ul><p class="line867">
+</p><h2 id="A5._Verify_Solr_installation">5. Verify Solr installation</h2>
+<span class="anchor" id="line-304"></span><p class="line874">After you started Solr admin console, you should be able to access the following links: <span class="anchor" id="line-305"></span><span class="anchor" id="line-306"></span></p><p class="line867"><span class="anchor" id="line-307"></span><span class="anchor" id="line-308"></span></p><pre><span class="anchor" id="line-1-27"></span>http://localhost:8983/solr/#/</pre><span class="anchor" id="line-309"></span><p class="line867">
+</p><h2 id="A6._Integrate_Solr_with_Nutch">6. Integrate Solr with Nutch</h2>
+<span class="anchor" id="line-310"></span><p class="line874">We have both Nutch and Solr installed and setup correctly. And Nutch already created crawl data from the seed URL(s). Below are the steps to delegate searching to Solr for links to be searchable: <span class="anchor" id="line-311"></span><span class="anchor" id="line-312"></span></p><ul><li><p class="line862">Backup the original Solr example schema.xml:<br>
+ <span class="anchor" id="line-313"></span><span class="anchor" id="line-314"></span><span class="anchor" id="line-315"></span></p><pre><span class="anchor" id="line-1-28"></span>mv ${APACHE_SOLR_HOME}/example/solr/collection1/conf/schema.xml ${APACHE_SOLR_HOME}/example/solr/collection1/conf/schema.xml.org</pre><span class="anchor" id="line-316"></span><span class="anchor" id="line-317"></span></li><li class="gap">Copy the Nutch specific schema.xml to replace it: <span class="anchor" id="line-318"></span><span class="anchor" id="line-319"></span><span class="anchor" id="line-320"></span><pre><span class="anchor" id="line-1-29"></span>cp ${NUTCH_RUNTIME_HOME}/conf/schema.xml ${APACHE_SOLR_HOME}/example/solr/collection1/conf/</pre><span class="anchor" id="line-321"></span><span class="anchor" id="line-322"></span></li><li class="gap"><p class="line862">Open the Nutch schema.xml file for editing:<br>
+ <span class="anchor" id="line-323"></span><span class="anchor" id="line-324"></span><span class="anchor" id="line-325"></span></p><pre><span class="anchor" id="line-1-30"></span>vi ${APACHE_SOLR_HOME}/example/solr/collection1/conf/schema.xml</pre><span class="anchor" id="line-326"></span><span class="anchor" id="line-327"></span><ul><li>Comment out the following lines (53-54) in the file by changing this: <span class="anchor" id="line-328"></span><span class="anchor" id="line-329"></span><span class="anchor" id="line-330"></span><span class="anchor" id="line-331"></span><pre><span class="anchor" id="line-1-31"></span>   &lt;filter class="solr.
+<span class="anchor" id="line-2-13"></span>EnglishPorterFilterFactory" protected="protwords.txt"/&gt;</pre><span class="anchor" id="line-332"></span>to this <span class="anchor" id="line-333"></span><span class="anchor" id="line-334"></span><span class="anchor" id="line-335"></span><span class="anchor" id="line-336"></span><pre><span class="anchor" id="line-1-32"></span>&lt;!--   &lt;filter class="solr.
+<span class="anchor" id="line-2-14"></span>EnglishPorterFilterFactory" protected="protwords.txt"/&gt; --&gt;</pre><span class="anchor" id="line-337"></span><span class="anchor" id="line-338"></span></li><li class="gap"><p class="line862">Add the following line right after the line &lt;field name="id" ... /&gt; (probably at line 69-70) <span class="anchor" id="line-339"></span><span class="anchor" id="line-340"></span><span class="anchor" id="line-341"></span></p><pre><span class="anchor" id="line-1-33"></span>&lt;field name="_version_" type="long" indexed="true" stored="true"/&gt;</pre><span class="anchor" id="line-342"></span><span class="anchor" id="line-343"></span></li><li class="gap">If you want to see the raw HTML indexed by Solr, change the content field definition (line 80) to: <span class="anchor" id="line-344"></span><span class="anchor" id="line-345"></span><span class="anchor" id="line-346"></span><pre><span class="anchor" id="line-1-34"></span>&lt;field name="content" type="text" stored="true" indexed="true"/&gt;</pre><span class="anchor" id="line-347"></span></li></ul></li><li><p class="line862">Save the file and restart Solr under <tt class="backtick">${APACHE_SOLR_HOME}/example</tt>: <span class="anchor" id="line-348"></span><span class="anchor" id="line-349"></span><span class="anchor" id="line-350"></span></p><pre><span class="anchor" id="line-1-35"></span>java -jar start.jar</pre><span class="anchor" id="line-351"></span><span class="anchor" id="line-352"></span></li><li class="gap"><p class="line862">run the Solr Index command from ${NUTCH_RUNTIME_HOME}:<br>
+ <span class="anchor" id="line-353"></span><span class="anchor" id="line-354"></span><span class="anchor" id="line-355"></span></p><pre><span class="anchor" id="line-1-36"></span>bin/nutch solrindex http://127.0.0.1:8983/solr/ crawl/crawldb -linkdb crawl/linkdb crawl/segments/</pre><span class="anchor" id="line-356"></span><span class="anchor" id="line-357"></span></li></ul><p class="line862">* <em> Note: If you are familiar with past version of the solrindex, the call signature for running it has changed. The linkdb is now optional, so you need to denote it with a "-linkdb" flag on the command line. </em> <span class="anchor" id="line-358"></span><span class="anchor" id="line-359"></span></p><p class="line862">This will send all crawl data to Solr for indexing. For more information please see <a href="http://wiki.apache.org/nutch/bin/nutch%20solrindex">bin/nutch solrindex</a> <span class="anchor" id="line-360"></span><span class="anchor" id="line-361"></span></p><p class="line862">If all has gone to plan, you are now ready to search with <a class="http" href="http://localhost:8983/solr/admin/">http://localhost:8983/solr/admin/</a>. <span class="anchor" id="line-362"></span><span class="anchor" id="bottom"></span></p></div><p id="pageinfo" class="info" lang="en" dir="ltr">NutchTutorial  (last edited 2015-01-16 22:06:45 by <span title="SebastianNagel @ 95.113.20.204[95.113.20.204]"><a class="nonexistent" href="http://wiki.apache.org/nutch/SebastianNagel" title="SebastianNagel @ 95.113.20.204[95.113.20.204]">SebastianNagel</a></span>)</p>
+
+<div id="pagebottom"></div>
+</div>
+
+
+<div id="footer">
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="http://wiki.apache.org/nutch/NutchTutorial#" class="nbcomment" onclick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="http://wiki.apache.org/nutch/NutchTutorial?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="http://wiki.apache.org/nutch/NutchTutorial?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="./NUTCH_TUTORIAL_1_files/NUTCH_TUTORIAL_1.html">
+<div>
+    
+    <select name="action" onchange="if ((this.selectedIndex != 0) &amp;&amp;
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="show">More Actions:</option><option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="RenderAsDocbook">Render as Docbook</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="RenamePage" disabled="" class="disabled">Rename Page</option>
+<option value="CopyPage">Copy Page</option>
+<option value="DeletePage" disabled="" class="disabled">Delete Page</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="MyPages">My Pages</option>
+<option value="show" disabled="" class="disabled">Subscribe User</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="show" disabled="" class="disabled">Remove Spam</option>
+<option value="show" disabled="" class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="SyncPages">Sync Pages</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="Load">Load</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+<ul id="credits">
+<li><a href="http://moinmo.in/" title="This site uses the MoinMoin Wiki software.">MoinMoin Powered</a></li><li><a href="http://moinmo.in/Python" title="MoinMoin is written in Python.">Python Powered</a></li><li><a href="http://moinmo.in/GPL" title="MoinMoin is GPL licensed.">GPL licensed</a></li><li><a href="http://validator.w3.org/check?uri=referer" title="Click here to validate this page.">Valid HTML 4.01</a></li>
+</ul>
+
+
+</div>
+
+
+
+</body></html>
